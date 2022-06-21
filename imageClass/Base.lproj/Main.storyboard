@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,32 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-uZ-DhP">
-                                <rect key="frame" x="20" y="772" width="374" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Techsys (PVT) Ltd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHk-LZ-GG4">
                                 <rect key="frame" x="20" y="737" width="374" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="Kbk-mq-gid"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JIT Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-qM-eY0">
+                                <rect key="frame" x="87" y="44" width="231" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="bUa-My-Wbn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-uZ-DhP">
+                                <rect key="frame" x="20" y="835" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5k9-qM-eY0" secondAttribute="trailing" constant="96" id="2nd-fC-RuQ"/>
+                            <constraint firstItem="5k9-qM-eY0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="3ZU-eW-R2S"/>
                             <constraint firstItem="vHk-LZ-GG4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="693" id="7sD-Yg-ObA"/>
                             <constraint firstItem="vHk-LZ-GG4" firstAttribute="trailing" secondItem="RhQ-uZ-DhP" secondAttribute="trailing" id="AAA-Aj-ZN5"/>
-                            <constraint firstItem="RhQ-uZ-DhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="728" id="Giy-Pq-hKU"/>
+                            <constraint firstItem="RhQ-uZ-DhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="791" id="Giy-Pq-hKU"/>
+                            <constraint firstItem="5k9-qM-eY0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LAc-G2-Ly0"/>
                             <constraint firstItem="RhQ-uZ-DhP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Yre-vp-PBx"/>
                             <constraint firstItem="vHk-LZ-GG4" firstAttribute="leading" secondItem="RhQ-uZ-DhP" secondAttribute="leading" id="elL-tl-PsS"/>
                             <constraint firstItem="RhQ-uZ-DhP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pga-b6-HtK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imageName" destination="RhQ-uZ-DhP" id="haf-Ew-PBi"/>
@@ -51,4 +62,10 @@
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="JIT Logo - White" width="842" height="595"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

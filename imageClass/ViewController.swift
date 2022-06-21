@@ -25,9 +25,7 @@ class ViewController: UIViewController,
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-            // here is where we start up the camera
-            // for more details visit: https://www.letsbuildthatapp.com/course_video?id=1252
+
             let captureSession = AVCaptureSession()
             captureSession.sessionPreset = .photo
             
